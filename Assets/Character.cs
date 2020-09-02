@@ -61,103 +61,172 @@ public class CharacterSkills : Character
         {
             int arcanism;
             bool isTrained;
-            SkillModifier arcanismModifier = SkillModifier.inteligence;
+            public SkillModifier arcanismModifier
+            {
+                get { return arcanismModifier; }
+                private set { arcanismModifier = SkillModifier.inteligence; }
+            }
         }
         public class Atletism
         {
             int atletism;
             bool isTrained;
-            SkillModifier atletismModifier = SkillModifier.strenght;
+            public SkillModifier atletismModifier
+            {
+                get { return atletismModifier; }
+                private set { atletismModifier = SkillModifier.strenght; }
+            }
         }
         public class Perfomance
         {
             int perfomance;
             bool isTrained;
-            SkillModifier perfomanceModifier = SkillModifier.charisma;
+            public SkillModifier perfomanceModifier
+            {
+                get { return perfomanceModifier; }
+                private set { perfomanceModifier = SkillModifier.charisma; }
+            }
         }
         public class Deception
         {
             int deception;
             bool isTrained;
-            SkillModifier deceptionModifier = SkillModifier.charisma;
+            public SkillModifier deceptionModifier
+            {
+                get { return deceptionModifier; }
+                private set { deceptionModifier = SkillModifier.charisma; }
+            }
         }
         public class Stealth
         {
             int stealth;
             bool isTrained;
-            SkillModifier stealthModifier = SkillModifier.dexterity;
+            public SkillModifier stealthModifier
+            {
+                get { return stealthModifier; }
+                private set { stealthModifier = SkillModifier.dexterity; }
+            }
         }
         public class History
         {
             int history;
             bool isTrained;
-            SkillModifier historyModifier = SkillModifier.inteligence;
+            public SkillModifier historyModifier
+            {
+                get { return historyModifier; }
+                private set { historyModifier = SkillModifier.inteligence; }
+            }
         }
         public class Intimidation
         {
             int intimidation;
             bool isTrained;
-            SkillModifier intimidationModifier = SkillModifier.charisma;
+            public SkillModifier intimidationModifier
+            {
+                get { return intimidationModifier; }
+                private set { intimidationModifier = SkillModifier.charisma; }
+            }
         }
         public class Insight
         {
             int insight;
             bool isTrained;
-            SkillModifier insightModifier = SkillModifier.wisdom;
+            public SkillModifier insightModifier
+            {
+                get { return insightModifier; }
+                private set { insightModifier = SkillModifier.wisdom; }
+            }
+
         }
         public class Investigation
         {
             int investigation;
             bool isTrained;
-            SkillModifier investigationModifier = SkillModifier.inteligence;
+            public SkillModifier investigationModifier
+            {
+                get { return investigationModifier; }
+                private set { investigationModifier = SkillModifier.inteligence; }
+            }
         }
         public class AnimalHandling
         {
             int animalHandling;
             bool isTrained;
-            SkillModifier animalHandlingModifier = SkillModifier.wisdom;
+            public SkillModifier animalHandlingModifier
+            {
+                get { return animalHandlingModifier; }
+                private set { animalHandlingModifier = SkillModifier.wisdom; }
+            }
         }
         public class Medicine
         {
             int medicine;
             bool isTrained;
-            SkillModifier medicineModifier = SkillModifier.wisdom;
+            public SkillModifier medicineModifier
+            {
+                get { return medicineModifier; }
+                private set { medicineModifier = SkillModifier.wisdom; }
+            }
         }
         public class Nature
         {
             int nature;
             bool isTrained;
-            SkillModifier natureModifier = SkillModifier.inteligence;
+            public SkillModifier natureModifier
+            {
+                get { return natureModifier; }
+                private set { natureModifier = SkillModifier.inteligence; }
+            }
         }
         public class Perception
         {
             int perception;
             bool isTrained;
-            SkillModifier perceptionModifier = SkillModifier.wisdom;
+            public SkillModifier perceptionModifier
+            {
+                get { return perceptionModifier; }
+                private set { perceptionModifier = SkillModifier.wisdom; }
+            }
         }
         public class Persuasion
         {
             int persuasion;
             bool isTrained;
-            SkillModifier persuasionModifier = SkillModifier.charisma;
+            public SkillModifier persuasionModifier
+            {
+                get { return persuasionModifier; }
+                private set { persuasionModifier = SkillModifier.charisma; }
+            }
         }
         public class Prestidigitation
         {
             int prestidigitation;
             bool isTrained;
-            SkillModifier prestidigitationModifier = SkillModifier.dexterity;
+            public SkillModifier prestidigitationModifier
+            {
+                get { return prestidigitationModifier; }
+                private set { prestidigitationModifier = SkillModifier.dexterity; }
+            }
         }
         public class Religion
         {
             int religion;
             bool isTrained;
-            SkillModifier religionModifier = SkillModifier.inteligence;
+            public SkillModifier religionModifier
+            {
+                get { return religionModifier; }
+                private set { religionModifier = SkillModifier.inteligence; }
+            }
         }
         public class Survival
         {
             int survival;
             bool isTrained;
-            SkillModifier survivalModifier = SkillModifier.wisdom;
+            public SkillModifier survivalModifier
+            {
+                get { return survivalModifier; }
+                private set { survivalModifier = SkillModifier.wisdom; }
+            }
         }
     }
 }
