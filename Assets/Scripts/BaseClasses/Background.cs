@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-public class BackgroundClass
+public class Background
 {
     SKillsENum[] isTrained;
 
@@ -14,21 +14,21 @@ public class BackgroundClass
 
 }
 
-public class Acolyte : BackgroundClass
+public class Acolyte : Background
 {
     SKillsENum[] isTrained = { SKillsENum.Insight, SKillsENum.Religion };
     LanguagesEnum[] languages = { LanguagesEnum.AtWill, LanguagesEnum.AtWill };
     // equipamento vai entrar aqui
 }
 
-public class ClanCrafter : BackgroundClass
+public class ClanCrafter : Background
 {
     SKillsENum[] isTrained = { SKillsENum.Insight, SKillsENum.Persuasion };
     LanguagesEnum[] languages = { LanguagesEnum.AtWill };
     // equipamento vai entrar aqui
 }
 
-public class Artist : BackgroundClass
+public class Artist : Background
 {
     SKillsENum[] isTrained = { SKillsENum.Acrobacy, SKillsENum.Perfomance };
     LanguagesEnum[] languages = { };

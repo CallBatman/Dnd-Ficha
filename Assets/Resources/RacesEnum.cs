@@ -1,5 +1,5 @@
 ﻿//pra que serve isso descobriremos
-public enum RacesEnum
+public enum Races
 {
     Human, 
     Elf, 

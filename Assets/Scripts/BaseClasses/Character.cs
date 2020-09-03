@@ -3,23 +3,31 @@ using System.Collections.Generic;
 
 public class Character
 {
-    string playerName;
+    public string playerName;
 
-    string name;
+    public string name;
 
-    RaceClass characterRaces;
+    public Races characterRace;
+
+    public RaceClass characterRaceBonus;
 
     // aqui vão entrar as classes
 
-    int level;
+    public int level;
 
-    int exp;
+    public int exp;
 
-    AlignmentEnum alignment;
+    public AlignmentEnum alignment;
 
-    // aqui vai o background
+    public CharacterInfo characeterInfo;
 
-    int inspiration;
+    public Background characterBackground;
+
+    public int inspiration;
+
+    public CharacterAtributes characterAtributes;
+
+    public CharacterSkills CharacterSkills;
 }
 
 public class CharacterInfo : Character
@@ -58,7 +66,29 @@ public class CharacterAtributes : Character
 
 public class CharacterSkills : Character
 {
-    public class Acrobacy
+
+    Acrobacy acrobacy;
+    Arcanism arcanism;
+    Atletism atletism;
+    Perfomance perfomance;
+    Deception deception;
+    Stealth stealth;
+    History history;
+    Intimidation intimidation;
+    Insight insight;
+    Investigation investigation;
+    AnimalHandling animalHandling;
+    Medicine medicine;
+    Nature nature;
+    Perception perception;
+    Persuasion persuasion;
+    Prestidigitation prestidigitation;
+    Religion religion;
+    Survival survival;
+
+    #region SkillClasses
+
+    public class Acrobacy : CharacterSkills
     {
         int acrobacy;
         bool isTrained;
@@ -69,7 +99,7 @@ public class CharacterSkills : Character
 
         }
     }
-    public class Arcanism
+    public class Arcanism : CharacterSkills
     {
         int arcanism;
         bool isTrained;
@@ -79,7 +109,7 @@ public class CharacterSkills : Character
             private set { arcanismModifier = SkillModifier.inteligence; }
         }
     }
-    public class Atletism
+    public class Atletism : CharacterSkills
     {
         int atletism;
         bool isTrained;
@@ -89,7 +119,7 @@ public class CharacterSkills : Character
             private set { atletismModifier = SkillModifier.strenght; }
         }
     }
-    public class Perfomance
+    public class Perfomance : CharacterSkills
     {
         int perfomance;
         bool isTrained;
@@ -99,7 +129,7 @@ public class CharacterSkills : Character
             private set { perfomanceModifier = SkillModifier.charisma; }
         }
     }
-    public class Deception
+    public class Deception : CharacterSkills
     {
         int deception;
         bool isTrained;
@@ -109,7 +139,7 @@ public class CharacterSkills : Character
             private set { deceptionModifier = SkillModifier.charisma; }
         }
     }
-    public class Stealth
+    public class Stealth : CharacterSkills
     {
         int stealth;
         bool isTrained;
@@ -119,7 +149,7 @@ public class CharacterSkills : Character
             private set { stealthModifier = SkillModifier.dexterity; }
         }
     }
-    public class History
+    public class History : CharacterSkills
     {
         int history;
         bool isTrained;
@@ -129,7 +159,7 @@ public class CharacterSkills : Character
             private set { historyModifier = SkillModifier.inteligence; }
         }
     }
-    public class Intimidation
+    public class Intimidation : CharacterSkills
     {
         int intimidation;
         bool isTrained;
@@ -139,7 +169,7 @@ public class CharacterSkills : Character
             private set { intimidationModifier = SkillModifier.charisma; }
         }
     }
-    public class Insight
+    public class Insight : CharacterSkills
     {
         int insight;
         bool isTrained;
@@ -150,7 +180,7 @@ public class CharacterSkills : Character
         }
 
     }
-    public class Investigation
+    public class Investigation : CharacterSkills
     {
         int investigation;
         bool isTrained;
@@ -160,7 +190,7 @@ public class CharacterSkills : Character
             private set { investigationModifier = SkillModifier.inteligence; }
         }
     }
-    public class AnimalHandling
+    public class AnimalHandling : CharacterSkills
     {
         int animalHandling;
         bool isTrained;
@@ -170,7 +200,7 @@ public class CharacterSkills : Character
             private set { animalHandlingModifier = SkillModifier.wisdom; }
         }
     }
-    public class Medicine
+    public class Medicine : CharacterSkills
     {
         int medicine;
         bool isTrained;
@@ -180,7 +210,7 @@ public class CharacterSkills : Character
             private set { medicineModifier = SkillModifier.wisdom; }
         }
     }
-    public class Nature
+    public class Nature : CharacterSkills
     {
         int nature;
         bool isTrained;
@@ -190,7 +220,7 @@ public class CharacterSkills : Character
             private set { natureModifier = SkillModifier.inteligence; }
         }
     }
-    public class Perception
+    public class Perception : CharacterSkills
     {
         int perception;
         bool isTrained;
@@ -240,4 +270,6 @@ public class CharacterSkills : Character
             private set { survivalModifier = SkillModifier.wisdom; }
         }
     }
+
+    #endregion
 }
