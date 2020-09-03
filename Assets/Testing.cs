@@ -11,7 +11,7 @@ public class Testing : MonoBehaviour
         // Debug.Log()
         potato = new DwarfRace();
         int languagesIndex = 0;
-        foreach (BaseLanguages languages in potato.classLanguages)
+        foreach (LanguagesEnum languages in potato.classLanguages)
         {
             Debug.Log(potato.classLanguages[languagesIndex]);
             languagesIndex++;

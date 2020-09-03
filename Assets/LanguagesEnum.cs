@@ -1,5 +1,6 @@
-﻿public enum BaseLanguages
+﻿public enum LanguagesEnum
 {
+    AtWill,
     Dwarfic,
     Elven,
     Common,

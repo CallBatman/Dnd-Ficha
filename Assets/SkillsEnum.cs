@@ -1,0 +1,21 @@
+﻿public enum SKillsENum
+{
+    Acrobacy,
+    Arcanism,
+    Atletism,
+    Perfomance,
+    Deception,
+    Stealth,
+    History,
+    Intimidation,
+    Insight,
+    Investigation,
+    AnimalHandling,
+    Medicine,
+    Nature,
+    Perception,
+    Persuasion,
+    Prestidigitation,
+    Religion,
+    Survival
+}
