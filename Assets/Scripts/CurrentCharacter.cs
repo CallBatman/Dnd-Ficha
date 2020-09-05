@@ -6,7 +6,7 @@ public class CurrentCharacter : MonoBehaviour
 {
     public Character currentSheet;
 
-    public RaceClass race;
+    public RaceClass characterRace;
 
     void Start()
     {
